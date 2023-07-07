@@ -3,8 +3,10 @@ import styles from './TopBar.module.css'
 import { Search, Person, Chat, Notifications } from '@mui/icons-material'
 import profile from '../assets/doggo.png'
 import logo from '../assets/logo2.png'
+import { Link } from 'react-router-dom'
 
 const TopBar = () => {
+
     return (
         <div className={styles.topBar}>
             <div className={styles.leftTop}>
@@ -33,7 +35,7 @@ const TopBar = () => {
                         <span className={styles.topIconBadge}>3</span>
                     </div>
                 </div>
-                <img src={profile} className={styles.image} />
+                <Link to="/profile"><img src={profile} className={styles.image}/></Link>
             </div>
         </div>
     )

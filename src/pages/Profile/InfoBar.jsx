@@ -1,7 +1,7 @@
 import React from 'react'
 import styles from './InfoBar.module.css'
 import { LocationOn, Cake, Face3 } from '@mui/icons-material'
-import postData from '../data/postData'
+import postData from '../../data/postData'
 
 const InfoBar = () => {
     return (

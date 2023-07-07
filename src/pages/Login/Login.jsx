@@ -1,7 +1,9 @@
 import React from 'react'
 import styles from './Login.module.css'
 import Lottie from 'lottie-react'
-import pupAnim from '../assets/pupAnimation.json'
+import pupAnim from '../../assets/pupAnimation.json'
+import { Link } from 'react-router-dom'
+import logo from '../../assets/logo2.png'
 
 const Login = () => {
     const [clicked, setClicked] = React.useState(false);
@@ -41,20 +43,31 @@ const Login = () => {
                             clicked ?
                                 <div className={styles.frontRight} tabindex="0">
                                     <div className={styles.cardContent}>
-                                        <h1 className={styles.title}>Welcome to</h1>
-                                        <h2 className={styles.subTitle}>Paw Connect.</h2>
+                                        <div className={styles.header}>
+                                            <img src={logo} className={styles.logo} />
+                                            <span>
+                                                <h1 className={styles.title}>Welcome to</h1>
+                                                <h2 className={styles.subTitle}>Paw Connect.</h2>
+                                            </span>
+                                        </div>
+
                                         <div className={styles.mid}>
                                             <input className={styles.inp} placeholder="Username" />
                                             <input className={styles.inp} placeholder="Password" />
-                                            <button className={styles.butt}>Login</button>
+                                            <Link to="/home"><button className={styles.butt}>Login</button></Link>
                                         </div>
                                     </div>
                                 </div>
                                 :
                                 <div className={styles.frontLeft} tabindex="0">
                                     <div className={styles.cardContent}>
-                                        <h1 className={styles.title}>Welcome to</h1>
-                                        <h2 className={styles.subTitle}>Paw Connect.</h2>
+                                        <div className={styles.header}>
+                                            <img src={logo} className={styles.logo} />
+                                            <span>
+                                                <h1 className={styles.title}>Welcome to</h1>
+                                                <h2 className={styles.subTitle}>Paw Connect.</h2>
+                                            </span>
+                                        </div>
                                         <div className={styles.mid}>
                                             <input className={styles.inp} placeholder="Full Name" />
                                             <input className={styles.inp} placeholder="Email" />
@@ -68,7 +81,7 @@ const Login = () => {
                     </div>
                 </div>
             </div>
-            <Lottie animationData={pupAnim} loop={true} className={styles.anim}/>
+            <Lottie animationData={pupAnim} loop={true} className={styles.anim} />
         </div>
     )
 }

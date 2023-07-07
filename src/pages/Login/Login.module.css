@@ -54,12 +54,12 @@
 
 .title {
     font-weight: 300;
-    font-size: 2.5rem;
+    font-size: 2rem;
 }
 
 .subTitle {
     font-weight: 450;
-    font-size: 2.8rem;
+    font-size: 2.1rem;
 }
 
 .inp {
@@ -88,24 +88,33 @@
     margin-top: 1.5rem;
 }
 
+.header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.logo {
+    width: 5rem;
+    height: 5rem;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
 .frontCard {
     position: absolute;
     z-index: 3;
     bottom: -5rem;
     transform: translateX(18rem); 
-    /* transition: transform 700ms; 
-    animation: 5s ease normal; */
 }
 
 .frontLeft {
-    padding: 2rem;
+    padding: 2rem 2rem;
     z-index: 3;
     background-color: var(--primary-button);
     width: 20rem;
     height: 25rem;
-    /* transition: transform 700ms; */
-    /* transform: translateX(18rem); */
-    /* animation: 5s ease normal; */
 }
 
 .frontRight {
@@ -114,7 +123,4 @@
     z-index: 30;
     width: 20rem;
     height: 25rem;
-    /* transition: transform 700ms; */
-    /* transform: translateX(0rem); */
-    /* animation: 5s ease normal; */
 }

@@ -1,11 +1,11 @@
 import React from 'react'
 import styles from './Profile.module.css'
-import TopBar from '../components/TopBar'
-import SideBar from '../components/sidebar/SideBar'
-import Feed from '../components/feed/Feed'
+import TopBar from '../../components/TopBar'
+import SideBar from '../../components/sidebar/SideBar'
+import Feed from '../../components/feed/Feed'
 import InfoBar from './InfoBar'
-import coverimg from '../assets/coverimg.png'
-import profile from '../assets/doggo.png'
+import coverimg from '../../assets/coverimg.png'
+import profile from '../../assets/doggo.png'
 
 const Profile = () => {
     return (
