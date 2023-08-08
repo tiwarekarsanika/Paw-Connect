@@ -1,0 +1,43 @@
+.sidebar {
+    flex: 3;
+    height: calc(100vh - 49px);
+    overflow-y: scroll;
+    position: sticky;
+    top: 49px;
+}
+
+::-webkit-scrollbar {
+    width: 1rem;
+}
+
+::-webkit-scrollbar-track {
+    background-color: var(--background);
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: var(--primary-button);
+    border-radius: 5rem;
+}
+
+.sbWrapper {
+    margin: 2rem;
+}
+
+.showButt {
+    border-radius: 0.3rem;
+    background-color: var(--tertiary-button);
+    border: none;
+    padding: 0.5rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+    width: 100%;
+}
+
+.divider {
+    margin-bottom: 1rem;
+}
+
+.friendList {
+    padding: 0;
+    list-style: none;
+}

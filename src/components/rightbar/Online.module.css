@@ -1,0 +1,42 @@
+.activity {
+    margin: 1.5rem 0;
+    padding: 0.5rem 1rem;
+    box-shadow: 0rem 0rem 0.8rem 0.3rem var(--tertiary-button);
+}
+
+.isOnline {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    position: relative;
+}
+
+.photo {
+    height: 2.5rem;
+    width: 2.5rem;
+    border-radius: 50%;
+}
+
+.active {
+    height: 0.5rem;
+    width: 0.5rem;
+    border-radius: 50%;
+    position: absolute;
+    background-color: limegreen;
+    left: 1.6rem;
+    top: -0.1rem;
+    border: 0.15rem solid var(--text-light);
+}
+
+.online {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 1.5rem;
+}
+
+.heading {
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+}

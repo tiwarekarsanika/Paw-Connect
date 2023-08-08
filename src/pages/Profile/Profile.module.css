@@ -1,0 +1,51 @@
+.container {
+    display: flex;
+}
+
+.profileRight {
+    display: flex;
+    flex-direction: column;
+    flex: 9;
+    padding: 1rem;
+}
+
+.profileTop {
+    margin-bottom: 1.5rem;
+    position: relative;
+}
+
+.cover {
+    height: 15rem;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 1rem 1rem 0 0;
+}
+
+.profile {
+    height: 8rem;
+    width: 8rem;
+    border-radius: 50%;
+    border: 0.25rem solid var(--text-light);
+    position: absolute;
+    left: 24.7rem;
+    bottom: 3rem;
+}
+
+.profileInfo {
+    margin-top: 3rem;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    justify-content: center;
+    align-items: center;
+}
+
+.bio {
+    width: 50rem;
+}
+
+.profileBottom {
+    display: flex;
+    flex-direction: row;
+}
